@@ -115,7 +115,7 @@ void blowfishInit(blowfish_context_t* ctx, u8* key, u32 keybytes)
 
 	  ctx->sbox[i][j] = datal;
 	  ctx->sbox[i][j + 1] = datar;
-    }
+    	}
   }
 
 }
