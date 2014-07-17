@@ -6,8 +6,8 @@
 #include <cstring>
 
 
-void encryptBlock(blowfish_context_t* ctx, u32 *xl, u32 *xr);
-void decryptBlock(blowfish_context_t* ctx, u32 *xl, u32 *xr);
+void encryptBlock(blowfish_context_t* ctx, u32* xl, u32* xr);
+void decryptBlock(blowfish_context_t* ctx, u32* xl, u32* xr);
 void blowfishInit(blowfish_context_t* ctx, u8* key, u32 keybytes);
 
 #endif
