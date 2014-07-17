@@ -48,9 +48,9 @@ void blowfishInit(blowfish_context_t* ctx, u8* key, u32 keybytes)
   for (u16 i = 0; i < 7; ++i)
   {
 	temp.w.byte0 = key[j];
-    temp.w.byte1 = key[(j+1)%keybytes];
+    	temp.w.byte1 = key[(j+1)%keybytes];
 	temp.w.byte2 = key[(j+2)%keybytes];
-    temp.w.byte3 = key[(j+3)%keybytes];
+    	temp.w.byte3 = key[(j+3)%keybytes];
 
 	switch (i)
 	{
@@ -111,7 +111,7 @@ void blowfishInit(blowfish_context_t* ctx, u8* key, u32 keybytes)
 	for (j = 0; j < 256; j += 2)
 	{
 	  
-		encryptBlock(ctx,&datal, &datar);
+	  encryptBlock(ctx,&datal, &datar);
 
 	  ctx->sbox[i][j] = datal;
 	  ctx->sbox[i][j + 1] = datar;
